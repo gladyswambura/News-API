@@ -1,0 +1,30 @@
+{% extends '/base.html' %}
+{% block content %}
+
+<div class="container ">
+    <h2 class="title text-center">
+        Sources of our News-Highlights
+    </h2><br><br>
+{% for news_source in sources %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card  mb-3">
+            <div class="card-header">
+                <h4 class="title">{{news_source.name}} </h4> 
+                <p>{{news_source.id}} </p>
+            </div>
+            <div class="card-body ">
+                <p class="desc">{{news_source.description}}</p>
+                <p><i>Source category: {{news_source.category}}<i></p>
+                <a href="{{news_source.url}}" target="_blank" style="font-style: italic;"><button
+                        class="btn btn-primary" type="button">{{news_source.name}}</button></a>
+                <p>Written in: {{news_source.language}}</p>
+                <p><small style="font-style: italic;">written by {{news_source.country}} on {{news_source.date}}</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}

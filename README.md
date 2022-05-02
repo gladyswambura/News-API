@@ -5,6 +5,8 @@
 ## Description
 News-API is a web application that displays a list of various news sources like BBC and CNN. On choosing a news source on the navigation bar, it will preview the top news sources of the day. Clicking a news article will redirect the user to read the news article. It achieves this by using the [News API](https://newsapi.org/).
 
+You can view the site at: https://gladysnews-api.herokuapp.com/
+
 ## User Stories
 These are the behaviours/features that the application implements for use by a user.
 
